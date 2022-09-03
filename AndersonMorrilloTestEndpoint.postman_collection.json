@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "687cdaa6-a803-4bfa-a0ee-852ca3397feb",
+		"name": "AndersonMorrilloTestEndpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "ObtenerClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/clientes/obtener-clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"clientes",
+								"obtener-clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerClientePorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/clientes/obtener-cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"clientes",
+								"obtener-cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"identificacion\": \"1314957281\",\r\n        \"nombres\": \"Jose Lema\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 35,\r\n        \"direccion\": \"Otavalo sn y principal\",\r\n        \"telefono\": \"098254785\",\r\n        \"contrasena\": \"1234\",\r\n        \"estado\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5050/clientes/agregar-cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"clientes",
+								"agregar-cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "ObtenerCuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/cuentas/obtener-cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"cuentas",
+								"obtener-cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCuentaPorNumero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/cuentas/obtener-cuenta/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"cuentas",
+								"obtener-cuenta",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipo\": \"AHORRO\",\r\n  \"saldoInicial\": 2000,\r\n  \"estado\": true,\r\n  \"clienteId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5050/cuentas/agregar-cuenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"cuentas",
+								"agregar-cuenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "ObtenerMovimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/movimientos/obtener-movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"movimientos",
+								"obtener-movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RealizarMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"saldoInicial\": 2000,\r\n  \"estado\": true,\r\n  \"monto\": -575\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5050/movimientos/realizar-movimiento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"movimientos",
+								"realizar-movimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GenerReporteCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5050/movimientos/generar-reporte/1314957281&2022-09-03&2022-09-03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5050",
+							"path": [
+								"movimientos",
+								"generar-reporte",
+								"1314957281&2022-09-03&2022-09-03"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

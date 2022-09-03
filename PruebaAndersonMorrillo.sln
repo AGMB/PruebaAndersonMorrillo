@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoPichincha.API", "BancoPichincha.API\BancoPichincha.API.csproj", "{4DA4EA81-4BD3-4F6F-86DA-C99617DBE3B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoPichincha.Core", "BancoPichincha.Core\BancoPichincha.Core.csproj", "{8FB2151C-22D1-4AD5-BEF5-EB71DB0DE478}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoPichincha.Repository", "BancoPichincha.Repository\BancoPichincha.Repository.csproj", "{4B40A730-1D3E-4711-B215-E5B08BF1448C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoPichincha.Services", "BancoPichincha.Services\BancoPichincha.Services.csproj", "{AF8FE9CF-1082-4F71-8E44-5D3ABC548C11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoPichincha.API.Test", "BancoPichincha.API.Test\BancoPichincha.API.Test.csproj", "{69B01DC4-BCF8-4FE3-8610-7D9040B57A92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA4EA81-4BD3-4F6F-86DA-C99617DBE3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA4EA81-4BD3-4F6F-86DA-C99617DBE3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA4EA81-4BD3-4F6F-86DA-C99617DBE3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA4EA81-4BD3-4F6F-86DA-C99617DBE3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB2151C-22D1-4AD5-BEF5-EB71DB0DE478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB2151C-22D1-4AD5-BEF5-EB71DB0DE478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB2151C-22D1-4AD5-BEF5-EB71DB0DE478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB2151C-22D1-4AD5-BEF5-EB71DB0DE478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B40A730-1D3E-4711-B215-E5B08BF1448C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B40A730-1D3E-4711-B215-E5B08BF1448C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B40A730-1D3E-4711-B215-E5B08BF1448C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B40A730-1D3E-4711-B215-E5B08BF1448C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8FE9CF-1082-4F71-8E44-5D3ABC548C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8FE9CF-1082-4F71-8E44-5D3ABC548C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8FE9CF-1082-4F71-8E44-5D3ABC548C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8FE9CF-1082-4F71-8E44-5D3ABC548C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B01DC4-BCF8-4FE3-8610-7D9040B57A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B01DC4-BCF8-4FE3-8610-7D9040B57A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B01DC4-BCF8-4FE3-8610-7D9040B57A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B01DC4-BCF8-4FE3-8610-7D9040B57A92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AECDE0DC-32DB-40F9-A677-A80FE7AD187C}
+	EndGlobalSection
+EndGlobal
